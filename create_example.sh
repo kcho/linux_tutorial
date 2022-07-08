@@ -1,5 +1,5 @@
 #!/bin/bash
-outdir=${HOME}/linux_intermediate
+outdir=${HOME}/linux_tutorial
 
 
 # 1. make complex structures
@@ -50,6 +50,7 @@ done
 
 
 # 2. copy reconall
-cp /data/pnl/kcho/example_data/linux_intermediate/example_recon_log.txt ${outdir}/recon-all.log
+SOURCE=`dirname ${BASH_SOURCE[0]}`
+cp ${SOURCE}/example_recon_log.txt ${outdir}/recon-all.log
 
 
