@@ -54,3 +54,47 @@ SOURCE=`dirname ${BASH_SOURCE[0]}`
 cp ${SOURCE}/example_recon_log.txt ${outdir}/recon-all.log
 
 
+# 3. create random code for ack
+code_dir=${outdir}/codes
+modalities='dwi anat'
+names='kevin thomas rick'
+for name in ${names}
+do
+    code_dir_for_name=${code_dir}/${name}
+    if [ ! -d ${code_dir_for_name} ]
+    then
+        mkdir -p ${code_dir_for_name}
+    fi
+
+    for modality in ${modalities}
+    do
+        code_loc=${code_dir_for_name}/run_${modality}_analysis.sh
+        if [ -e ${code_loc} ]
+        then
+            rm ${code_loc}
+        fi
+
+        echo "bet x y" >> ${code_loc}
+        echo "fslmaths x -mas mask y" >> ${code_loc}
+
+        if [[ "${name}" == "kevin" && "${modality}" == "anat" ]]
+        then
+            echo "antsRegistration a b c d" >> ${code_loc}
+        fi
+
+    done
+done
+
+
+# csv example
+line_to_write="2752,3015961,7338,DNRAI_VNTG24M24K,05383,08/30/2016,180,F,,s3://DNRAC_nerat_l1/usmbsiisn_3585/00_50S338_2016-08-30/name_tag.tgz,fMRI,42.90,dMRI,Live,DICOM,MRI,SIEMENS,Prisma_fit,3T,,404.0,.261,70,256 0 0 256,,HFS,,No,Yes,Practice Linux Project (PLP)"
+echo ${line_to_write} > ${outdir}/complex_line.csv
+
+line_to_write1="2752,3015961,7338,DNRAI_VNTG24M24K,05383,08/30/2016,180,F,,s3://DNRAC_nerat_l1/usmbsiisn_3855/00_50S338_2016-08-30/name_tag.tgz,fMRI,42.90,dMRI,Live,DICOM,MRI,SIEMENS,Prisma_fit,3T,,404.0,.261,70,256 0 0 256,,HFS,,No,Yes,Practice Linux Project (PLP)"
+line_to_write2="2753,3015962,7339,DRNIA_VTNG24M42K,05338,01/30/2017,170,M,,s3://DNRAC_nerat_l1/usmbsiisn_3558/00_50S338_2017-01-30/name_tag.tgz,dMRI,42.90,dMRI,Live,DICOM,MRI,SIEMENS,Prisma_fit,3T,,404.0,.261,70,256 0 0 256,,HFS,,No,Yes,Practice Linux Project (PLP)"
+line_to_write3="2754,3015963,7340,DRNIA_VNGT242MK4,05833,06/03/2019,175,F,,s3://DNRAC_nerat_l1/usmbsiisn_8355/00_50S338_2019-06-03/name_tag.tgz,tMRI,42.90,dMRI,Live,DICOM,MRI,SIEMENS,Prisma_fit,3T,,404.0,.261,70,256 0 0 256,,HFS,,No,Yes,Practice Linux Project (PLP)"
+line_to_write4="2755,3015964,7341,DNARI_VNTG42M42K,03583,03/30/2016,179,M,,s3://DNRAC_nerat_l1/usmbsiisn_385/00_50S338_2016-03-30/name_tag.tgz,fMRI,42.90,dMRI,Live,DICOM,MRI,SIEMENS,Prisma_fit,3T,,404.0,.261,70,256 0 0 256,,HFS,,No,Yes,Practice Linux Project (PLP)"
+echo ${line_to_write1} > ${outdir}/multi_lines.csv
+echo ${line_to_write2} >> ${outdir}/multi_lines.csv
+echo ${line_to_write3} >> ${outdir}/multi_lines.csv
+echo ${line_to_write4} >> ${outdir}/multi_lines.csv
