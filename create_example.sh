@@ -98,3 +98,10 @@ echo ${line_to_write1} > ${outdir}/multi_lines.csv
 echo ${line_to_write2} >> ${outdir}/multi_lines.csv
 echo ${line_to_write3} >> ${outdir}/multi_lines.csv
 echo ${line_to_write4} >> ${outdir}/multi_lines.csv
+
+
+# rm loop folder created in the class
+if [ -d ${outdir}/loop ]
+then
+    rm -rf ${outdir}/loop
+fi

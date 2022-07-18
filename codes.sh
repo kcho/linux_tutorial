@@ -98,3 +98,108 @@ cat ~/linux_tutorial/recon-all.log |grep subject01 |mail -s summary_of_data kc24
 	#- function
 	#- different modules
 # test driven development (TDD)
+
+# awk
+cd ~/linux_tutorial
+cat complex_line.csv
+cat complex_line.csv | awk -F ',' '{print $10}'
+cat complex_line.csv | awk -F ',' '{print $10}' | awk -F '/' '{print $1}'
+cat complex_line.csv | awk -F ',' '{print $10}' | awk -F '/' '{print $5}'
+cat complex_line.csv | awk -F ',' '{print $10}' | awk -F '/' '{print $5}' | awk -F '_' '{print $3}'
+
+cat multi_lines.csv
+cat multi_lines.csv | awk -F ',' '{print $10}'
+cat multi_lines.csv | awk -F ',' '{print $10}' | awk -F '/' '{print $5}'
+cat multi_lines.csv | awk -F ',' '{print $10}' | awk -F '/' '{print $5}' | awk -F '_' '{print $3}'
+
+
+# ack
+cd ~/linux_tutorial/codes
+tree
+ack antsRegistration
+
+
+# loop
+a=1
+echo a
+echo $a
+
+a=abc
+echo a
+echo $a
+
+a=~/linux_tutorial/codes
+echo $a
+ls $a
+
+a=haha
+echo $a
+echo $a$a
+echo aa
+echo $aa
+echo ${a}a
+
+
+for ra_name in kevin thomas rick
+do
+    echo ${ra_name}
+done
+
+for ra_name in kevin thomas rick a b c d
+do
+    echo ${ra_name}
+done
+
+for subject_number in 01 02 03 04
+do
+    echo ${subject_number}
+done
+
+for subject_number in 01 02 03 04
+do
+    echo subject_$subject_number
+done
+
+cd ~/linux_tutorial/MRI_ROOT/rawdata
+for subject_number in 01 02 03 04 05 06 07 08 09
+do
+	echo ${subject_number}
+done
+for subject_number in 01 02 03 04 05 06 07 08 09
+do
+	echo sub-${subject_number}
+done
+for subject_number in 01 02 03 04 05 06 07 08 09
+do
+	ls sub-${subject_number}
+done
+for subject_number in 01 02 03 04 05 06 07 08 09
+do
+	echo ${subject_number}
+ls sub-${subject_number}
+done
+
+
+# task
+cd ~/linux_tutorial/
+for number in 01 02 03 04 05 06 07 08 09
+do
+	echo ${number}
+done
+for name in kevin haha Jeong hoho thomas rick
+do
+	echo ${name}
+done
+mkdir loop
+for name in kevin haha Jeong hoho thomas rick
+do
+	echo ${i}
+for name in kevin haha Jeong hoho thomas rick
+do
+	echo ${name}
+mkdir loop/${name}
+done
+for name in kevin haha Jeong hoho thomas rick
+do
+	touch loop/${name}/code_${name}
+done
