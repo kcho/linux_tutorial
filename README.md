@@ -62,13 +62,14 @@ Part 1 Video 1: https://youtu.be/L4SpK6kCrYg
 - bashrc 
 - ack
 - simple loop
+- if statement
 - function
 - crontab
 - diff
 
-Vim
-- do the same thing that simple loop does
- 
-Python
+- Git
+- Vim
+    - do the same thing that simple loop does
+- Python
 ```
 
