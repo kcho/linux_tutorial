@@ -118,3 +118,20 @@ echo ${line_to_write1} > ${outdir}/multi_lines2.csv
 echo ${line_to_write2} >> ${outdir}/multi_lines2.csv
 echo ${line_to_write3} >> ${outdir}/multi_lines2.csv
 echo ${line_to_write4} >> ${outdir}/multi_lines2.csv
+
+
+# hohohohoho
+mkdir ${outdir}/bin
+echo "echo ----------" > ${outdir}/bin/hoho.sh
+echo "echo Hello" >> ${outdir}/bin/hoho.sh
+echo "echo hahahahaha" >> ${outdir}/bin/hoho.sh
+echo "echo ----------" >> ${outdir}/bin/hoho.sh
+chmod +x ${outdir}/bin/hoho.sh
+
+
+
+# task
+mkdir ${outdir}/tasks
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cp $SCRIPT_DIR/tasks/linux_task_1.md ${outdir}/tasks
+
