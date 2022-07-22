@@ -10,8 +10,9 @@ Under the `~/linux_tutorial`
 3. find all files that ends with 'anat.nii.gz' and send these paths to your email.
 4. find all files that ends with 'anat.nii.gz' and save only the file names to `~/linux_tutorial/anat_file_name.txt`.
 5. find all files that ends with 'anat.nii.gz' and print when each file was created.
+6. replace `-` to `_` in the `~/linux_tutorial/anat_file_path.txt` (overwrite the file)
 6. replace `/` to `,` in the `~/linux_tutorial/anat_file_path.txt` (overwrite the file)
-7. print second column of the file `~/linux_tutorial/anat_file_path.txt`
+7. print second column of the file `~/linux_tutorial/multi_lines.csv`
 8. find difference between `~/linux_tutorial/multi_lines.csv` and `~/linux_tutorial/multi_lines2.csv` 
 9. print all the lines that contain "registration" in the `~/linux_tutorial/recon-all.log`
 10. print line number for each line that contains "registration"
