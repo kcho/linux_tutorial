@@ -9,22 +9,28 @@ sed
 grep
 head
 tail
-less
 mail
 ack
 diff
 which
-ifconfig
 wget
 
+# for loop
 for i in 1 2 3 4
 do
     echo ${i}
 done
 
+# writing a script
+
+# creating function
 function print_haha() {
     for i in $@
     do
         echo haha ${i}
     done
 }
+
+metacharacters
+less
+ifconfig

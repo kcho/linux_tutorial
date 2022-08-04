@@ -32,3 +32,18 @@ Under the `~/linux_tutorial`
 23. exit and reconnect to your terminal, and see if `hoho.sh` still works.
 24. how can we access `hoho.sh`, without updating `PATH` everytime?
 25. download miniconda installer (`https://docs.conda.io/en/latest/miniconda.html`) using `wget` command.
+
+
+Using for loop
+---------------
+1. echo 01 02 03 04 05 06 07 08 09 
+2. print all RA's name in each line
+3. create folders with each RA's name under `~/linux_tutorial/loop`
+4. create empty files under each RA's folder under `~/linux_tutorial/loop` with "code_" and the RA's name in the file name
+(use touch)
+
+
+Write a bash script: `~/linux_tutorial/my_code_1.sh`
+---------------------------------------------------------
+1. find all files that ends with `anat.nii.gz` under `~/linux_tutorial/MRI_ROOT`
+2. copy the files found above to a new `MRI_ROOT` folder, `~/linux_tutorial/MRI_ROOT_new`
