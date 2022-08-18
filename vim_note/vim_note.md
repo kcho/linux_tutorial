@@ -6,11 +6,22 @@ $ vi ~/linux_tutorial/recon-all.log
 ```
 
 
+## We will not write anything, until we are comfortable moving around in vim
+
+- The keys are case sensitive
+- The purpose is to move with the least number of key strokes.
+- 5 mins every day
+- Change your "caps lock" key to Ctrl to make your life easier.
+
+
 # Core
 ---
 ```
 <ESC>
-hjkl
+h
+j
+k
+l
 3j
 2k
 10l
@@ -20,29 +31,36 @@ hjkl
 # Basics 1
 ---
 ```
+^$
+gg
+G
+H
+L
+<C-d>
+(This is "Ctrl key and d key pressed together)
+<C-u>
+
+fa
+Fa
+ta
+Ta
+w
+b
+(go on a word) #
+(go on a word) *
+```
+
+# Basics 2
+---
+```
 x
 2x
 D
 dd
 dj
 dk
-^$
-gg G
-H L
-
-<C-d>
-(This is Ctrl key and d key pressed together)
-<C-u>
-fa Fa
-ta Ta
-w b
-#
-*
-```
-
-# Basics 2
----
-```
+yp
+yP
 Yp
 YP
 Y3p
@@ -50,19 +68,6 @@ Y2P
 v MOTION_KEYS y MOTION_KEYS p
 V MOTION_KEYS y MOTION_KEYS p
 <C-v> MOTION_KEYS y MOTION_KEYS p
-```
-
-# Bascis 3
----
-```
-a
-A
-i
-I
-c
-C
-r
-R
 ```
 
 # Intermediate 1
@@ -88,13 +93,14 @@ SELECT then :s/w/H/g
 ```
 :vs
 :split
+<C-w><C-w>
 <C-w> j
 <C-w> k
 <C-w> h
 <C-w> l
 :tabnew
-gt Gt
-i I a A o O
+gt
+Gt
 :imap jj <ESC>
 :set number
 :set number&
@@ -112,10 +118,27 @@ Copy a line then, <C-r> 0 in INSERT MODE
 
 # Advanced
 ---
+```
+a
+A
+i
+I
+o
+O
+c
+C
+r
+R
+```
+
+
+# Advanced
+---
 
 ```
+:term
+<C-\><C-n>
 neovim
 neovim settings
 plug
 ```
-
