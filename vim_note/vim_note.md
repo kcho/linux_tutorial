@@ -3,14 +3,18 @@ Open a text file and try typing the keys
 
 ```
 $ vi ~/linux_tutorial/recon-all.log
+
+or
+
+inside vim, :r https://raw.githubusercontent.com/kcho/linux_tutorial/master/vim_note/vim_note.md
 ```
 
 
 ## We will not write anything, until we are comfortable moving around in vim
 
-- The keys are case sensitive
+- The keys are case sensitive.
 - The purpose is to move with the least number of key strokes.
-- 5 mins every day
+- 5 mins every day for two weeks.
 - Change your "caps lock" key to Ctrl to make your life easier.
 
 
@@ -57,6 +61,7 @@ x
 2x
 D
 dd
+.
 dj
 dk
 yp
