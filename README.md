@@ -34,7 +34,15 @@ bash create_example.sh
 
 
 ## List of videos
-Part 1 Video 1: https://youtu.be/L4SpK6kCrYg
+Part 1: Useful basic commands (https://youtu.be/L4SpK6kCrYg)
+Part 2: Pipe | (https://youtu.be/iK9gCmB3m0E)
+Part 3: Variable vs String (https://youtu.be/uA5V5tGrCoI)
+Part 4: For loop (https://youtu.be/GChzC7mP9tg)
+Part 5: $PATH (https://youtu.be/DRiCxgtCuIs)
+Part 6: Test your linux skills (https://youtu.be/TbS9ou55fIw) - https://github.com/kcho/linux_tutorial/blob/master/tasks/linux_task_1.md
+Part 7: Meta-characters (https://youtu.be/Pbo4KR97Uu4)
+Part 8: Writing Bash script 1 (https://youtu.be/HH8nEePo4Zs)
+Part 9: Writing Bash script 2 & VIM intro (https://youtu.be/QzEjHwJCPZo)
 
 
 ## ETC.
