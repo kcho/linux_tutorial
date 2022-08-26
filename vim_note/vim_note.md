@@ -57,6 +57,11 @@ b
 # Basics 2
 ---
 ```
+:set number
+:set relativenumber
+20G
+100G
+zz
 x
 2x
 D
@@ -107,8 +112,6 @@ SELECT then :s/w/H/g
 gt
 Gt
 :imap jj <ESC>
-:set number
-:set number&
 Copy a line then, <C-r> 0 in INSERT MODE
 
 # auto completion
@@ -141,6 +144,8 @@ R
 ---
 
 ```
+:saveas ~/haha.sh
+:e ~/hoho.sh
 :term
 <C-\><C-n>
 neovim
