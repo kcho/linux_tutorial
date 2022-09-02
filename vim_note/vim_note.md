@@ -103,6 +103,7 @@ SELECT then :s/w/H/g
 ---
 ```
 :vs
+:e ~/practice.txt
 :split
 <C-w><C-w>
 <C-w> j
