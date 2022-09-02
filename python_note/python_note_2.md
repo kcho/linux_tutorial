@@ -1,14 +1,47 @@
 Python note 2
 -------------
 
+### Rev
+
+
 ### Loop
 
 1. simple loop
     - use indentation to define things to be done for each item
         - tab (use four spaces)
+
+```
+for number in [1, 2, 3, 4]:
+    print(number)
+```
+
 2. enumerate(list)
+
+```
+for index, number in enumerate([1, 2, 3, 4]):
+    print(index)
+    print(number)
+```
+
 3. zip(list1, list2)
+
+```
+for name, age in zip(['a', 'b', 'c', 'd'], [33, 22, 24, 30]):
+    print(name)
+    print(age)
+```
+
 4. dict.items()
+
+```
+name_age_dict = {'a': 33,
+                 'b': 22,
+                 'c': 24,
+                 'd': 30}
+for name, age in name_age_dict.items():
+    print(name)
+    print(age)
+```
 
 
 ### Updating a list in a loop
