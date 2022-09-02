@@ -106,14 +106,14 @@ a.pop('new')
 ```
 
 3. Test
-    1. Create a dictionary called `place_dict_1`, representing a place.
+    1. Create a dictionary called `place_dict_1`. Make it to represent a place. eg) your home or office.
         - example keys to use: address, phone_number, number_of_people
     2. Create another dictionary called `place_dict_2`, representing another place.
         - example keys to use: address, phone_number, number_of_people
     3. Create a list called `place_dict_list` and append the dictionaries above to the list.
     4. Get the value of `phone_number` from the first dictionary.
     5. Get the value of `phone_number` from the second dictionary.
-    6. Get the number of people in the first place and second place and add them.
+    6. Get number of people in the first place and second place and add them.
     7. Create another dictionary called `place_dict_3`, representing another lab info.
         - example keys to use: address, phone_number, number_of_people
     8. Add `place_dict_3` to `place_dict_list`.
@@ -129,11 +129,33 @@ a.pop('new')
 
 
 3. Loop
+- simple loop
+- enumerate(list)
+- zip(list1, list2)
+- dict.items()
+
+
+Updating a list in a loop
+-------------------------
+- create an empty list, called `new_list`
+- create a list, `old_list = [1, 2, 3, 4, 5]`
+- loop through each item of the `old_list`, and `print(item + 1)`
+- loop through each item of the `old_list`, and append the `item + 1` to `new_list`
+
+
+Updating a dictionary in a loop
+-------------------------------
+- create an empty dict, called `new_dict`
+- create a list, `old_dict = ['a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5]`
+- loop through each seet of `key` & `value` of the `old_dict`, and `print(value + 1)`
+- loop through each seet of `key` & `value` of the `old_dict`, and update `new_dict` with the key and `value + 1`
+
 
 4. If statment
-
 5. function
-6. Import tools!
+6. Import tools.
+7. Pandas
+8. Matplotlib
 7. export as notes
 
 

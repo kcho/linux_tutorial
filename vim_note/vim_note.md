@@ -87,7 +87,8 @@ V MOTION_KEYS y MOTION_KEYS p
 :!top
 :r ~/practice.txt
 :r !ls ~/Downloads
-/ha    n      N     ,/
+/ha    n      N     noh
+
 :s/wa/HH
 :s/w/H
 :s/w/H/g
@@ -142,7 +143,6 @@ R
 
 # Advanced
 ---
-
 ```
 :saveas ~/haha.sh
 :e ~/hoho.sh
