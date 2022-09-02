@@ -2,6 +2,35 @@ Python note 2
 -------------
 
 ### Rev
+- create a list called 'names_list' with four people's names.
+- get the first name
+- get the last name
+
+- create a dict called 'name_age_dict' with four people's names and age
+- get the age of XX
+- get the age of ZZ
+
+
+### String
+```
+a[0]
+a[-1]
+a[:-2]
+
+a.upper()
+a.lower()
+
+1+1
+1+'haha'
+str(1) + 'haha'
+'haha' + 'hoho'
+
+a = "kevin"
+f"my name is {a}" 
+
+b = 1
+f"my number is {b}"
+```
 
 
 ### Loop
