@@ -110,6 +110,156 @@ for name, age in name_age_dict.items():
 Python 3
 --------
 
+a='abc|def'
+string.split('|')
+
+
+`test.csv`
+Fenway
+Brookline
+Cambridge
+Longwood
+Allston
+
+```python
+with open('test.csv', 'r') as fp:
+    text = fp.read()
+
+print(text)
+areas = text.split('\n')
+```
+
+Print first character of each area
+
+### write a script
+
+test_python.py
+```
+with open('test.csv', 'r') as fp:
+    text = fp.read()
+
+print(text)
+areas = text.split('\n')
+
+for area in areas:
+    first_char = area[0]
+
+```
+
+`which python`
+`python test_python.py`
+
+
+### if statement
+```
+with open('test.csv', 'r') as fp:
+    text = fp.read()
+
+print(text)
+areas = text.split('\n')
+
+for area in areas:
+    first_char = area[0]
+    print(first_char)
+    if first_chr == 'A':
+        print(area)
+
+```
+
+a='abc|def'
+string.split('|')
+
+
+`test.csv`
+Fenway
+Brookline
+Cambridge
+Longwood
+Allston
+
+
+
+
+Python 4
+--------
+
+### if conditions / statement
+
+```
+>
+<
+==
+!=
+4 in [1, 2, 3]
+1 in [1, 2, 3]
+a is None
+
+if a == True
+if a
+
+
+if (a == True) and (b == True)
+if (a == True) or (b == True)
+
+if:
+else:
+
+if a:
+
+elif b:
+
+else:
+```
+
+
+
+### function
+
+```
+def add_one(x):
+    return x + 1
+
+new_value = add_one(3)
+    
+
+def multiply_five(x):
+    return x * 5
+
+multiply_five(5)
+
+
+output = multiply_five(add_one(3)))
+
+output_1 = add_one(3)
+output_2 = multiply_five(output_1)
+
+```
+
+
+
+```
+def add_one(x: int) -> int:
+    return x + 1
+
+new_value = add_one(3)
+    
+```
+
+
+### modules
+```
+os
+re
+pandas
+numpy
+Path
+json
+
+
+pip
+```
+
+
 5. If statment
 6. function
 7. Import tools.
