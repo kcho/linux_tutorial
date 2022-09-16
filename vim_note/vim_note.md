@@ -105,6 +105,7 @@ SELECT then :s/w/H/g
 :vs
 :e ~/practice.txt
 :split
+:vsplit
 <C-w><C-w>
 <C-w> j
 <C-w> k
@@ -113,7 +114,7 @@ SELECT then :s/w/H/g
 :tabnew
 gt
 Gt
-:imap jj <ESC>
+:inormap jj <ESC>
 Copy a line then, <C-r> 0 in INSERT MODE
 
 # auto completion
@@ -147,9 +148,26 @@ R
 ```
 :saveas ~/haha.sh
 :e ~/hoho.sh
+```
+
+
+download nvim
+
+```
+mkdir -p ~/.config/nvim
+cd ~/.config/nvim
+wget https://raw.githubusercontent.com/kcho/linux_tutorial/master/vim_note/init.vim
+```
+
+```
 :term
 <C-\><C-n>
-neovim
-neovim settings
-plug
 ```
+
+plug: https://github.com/junegunn/vim-plug
+neovim remote (pip3 install neovim-remote)
+
+color scheme
+easy motion
+nerdtree
+nerdcommenter
