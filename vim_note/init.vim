@@ -99,8 +99,8 @@ let mapleader = ","
 " Lets you save after you open a file that needs sudo
 cmap !! w !sudo tee % >/dev/null
 
-
-let g:python3_host_prog = '/Users/kc244/opt/anaconda3/bin/python'
+#change here to your python path
+let g:python3_host_prog = '/data/pnl/soft/pnlpipe3/miniconda/bin/python'
 
 nmap <silent> ,/ :nohlsearch<CR>
 let mapleader = ","
