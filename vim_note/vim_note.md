@@ -142,17 +142,16 @@ r
 R
 ```
 
+```
+:saveas ~/haha.sh
+```
 
 # Advanced
 ---
-```
-:saveas ~/haha.sh
-:e ~/hoho.sh
-```
+vimium
+Download neovim
 
-
-download nvim
-
+Set up neovim
 ```
 mkdir -p ~/.config/nvim
 cd ~/.config/nvim
@@ -164,9 +163,9 @@ wget https://raw.githubusercontent.com/kcho/linux_tutorial/master/vim_note/init.
 <C-\><C-n>
 ```
 
-plug: https://github.com/junegunn/vim-plug
+plug (https://github.com/junegunn/vim-plug)
+split-term (https://github.com/vimlab/split-term.vim)
 neovim remote (pip3 install neovim-remote)
-
 color scheme
 easy motion
 nerdtree
